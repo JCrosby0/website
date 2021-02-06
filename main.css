@@ -7,13 +7,17 @@ html, body {
 
 body {
   background-color: #333333;
-  font-size:2rem;
+  font-size:1.5rem;
   font-family: sans-serif;
+  transition: ease all 0.5s;
 }  
 
 body, a, a:hover, a:visited {
   text-decoration: none;
   color: #fefefe;
+}
+a {
+ line-height: 2rem;
 }
 
 a:before {
@@ -28,32 +32,37 @@ a.target {
 
 .contact {
   position: absolute;
-  top: 6rem;
-  right: 0rem;
+  top: 2rem;
+  right: -1rem;
   transform: rotate(90deg);
 }
 
 #page-land {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  height: 100%;
+  height: 100vh;
+  transition: ease all 0.5s;
 }
 
 .text-haiku {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: sans-serif;
   flex: 0 0 auto;
+  transition: ease all 0.5s
 }
 .image-container {
-  flex: 0 1 389px;
+  flex: 0 1 auto;
+  margin: -1.8rem;
+  transition: ease all 0.5s
 }
 
 .page {
   width: 100vw;
   height: 100vh;
-  padding: 3rem;
+  padding: 2rem;
   box-sizing: border-box;
 }
 .page:nth-child(even) {
@@ -66,6 +75,7 @@ span {
 
 .highlight {
   color: #FF88FF;
+  font-size: larger;
 }
 
 .italics {
@@ -86,4 +96,41 @@ span {
 .item:nth-child(even) {
   background-color: #222;
 }
+svg .svg-rect-1, 
+svg .svg-rect-2, 
+svg .svg-rect-3 {
+  stroke: #888888;
+  x: 1rem;
+}
+svg .svg-rect-1 { fill: #88ff88; }
+svg .svg-rect-2 { fill: #00ff00; }
+svg .svg-rect-3 { fill: #008800; }
+
+svg .svg-text-1, 
+svg .svg-text-2, 
+svg .svg-text-3 {
+  fill: #333;
+  x: 2rem;
+  font-size: 1rem;
+  transition: all ease 0.5s;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 1rem;
+    transition: ease all 0.5s;
+  }
+  .text-haiku {
+    font-size: 1.2rem;
+    transition: ease all 0.5s;
+
+  }  
+  .image-container > picture > img {
+    width: 195px;
+    height: 220px;
+    transition: ease all 0.5s;
+  }
+}
+
 
