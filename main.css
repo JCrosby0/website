@@ -2,9 +2,8 @@ body {
   overflow-x: hidden;
 }
 
-
 #page-land {
-display: flex;
+  display: flex;
 }
 
 .text-haiku {
@@ -12,12 +11,14 @@ display: flex;
   width: 50vh;
   font-size: 1.7rem;
   font-family: sans-serif;
-  flex 1 1 auto;
+  flex: 1 1 auto;
 }
 .image-container {
   width: 386px;
+  height: 450px;
   background-image: url("./joe.png");
   background-repeat: no-repeat;
+  flex: 1 1 auto;
 }
 
 .page {
