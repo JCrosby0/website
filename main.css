@@ -47,11 +47,7 @@ a.target {
   flex: 0 0 auto;
 }
 .image-container {
-  width: 389px;
-  height: 440px;
-  background-image: url("./joe.png");
-  background-repeat: no-repeat;
-  flex: 0 1 auto;
+  flex: 0 1 389px;
 }
 
 .page {
