@@ -15,8 +15,9 @@ display: flex;
   flex 1 1 auto;
 }
 .image-container {
-  width: 40vw;
+  width: 386px;
   background-image: url("./joe.png");
+  background-repeat: no-repeat;
 }
 
 .page {
