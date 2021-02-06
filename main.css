@@ -1,29 +1,37 @@
-body {
+html, body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 #page-land {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .text-haiku {
-  height: 100vh;
-  width: 50vh;
   font-size: 1.7rem;
   font-family: sans-serif;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
 }
 .image-container {
-  width: 386px;
-  height: 450px;
+  width: 389px;
+  height: 440px;
   background-image: url("./joe.png");
   background-repeat: no-repeat;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
 }
 
 .page {
   width: 100vw;
   height: 100vh;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+.page:nth-child(even) {
+  background: #222;
 }
 
 span {
@@ -39,4 +47,8 @@ span {
 }
 body {
   background-color: #333333;
+  color: #fefefe;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  
 }
