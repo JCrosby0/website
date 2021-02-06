@@ -1,3 +1,23 @@
 .title {
  color: red;
 }
+
+.page {
+  width: 1vw;
+  height: 1vh;
+}
+
+span {
+  color: #88FE88;
+}
+
+.highlight {
+  color: #FF88FF;
+}
+
+.italics {
+  font-style: italic;
+}
+body {
+  background-color: #333333;
+}
