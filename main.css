@@ -3,11 +3,20 @@ body {
 }
 
 
+#page-land {
+display: flex;
+}
+
 .text-haiku {
   height: 100vh;
   width: 50vh;
   font-size: 1.7rem;
   font-family: sans-serif;
+  flex 1 1 auto;
+}
+.image-container {
+  width: 40vw;
+  background-image: url("./joe.png");
 }
 
 .page {
