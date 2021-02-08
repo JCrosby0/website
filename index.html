@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Web Developer Portfolio for Joe Crosby.">    
+    <meta name="Description" content="Web Developer Portfolio for Joe Crosby.">
+    <meta name="theme-color" content="#333">    
     <title>Portfolio: Joe Crosby</title>
     <link rel="stylesheet" href="main.css">
   </head>
@@ -35,7 +36,8 @@ As an end-user, I used software to collate, visualise and calculate my data. I a
     </div>
     <div class="page" id="page-skills">
       <h2>Skills</h2>
-      <svg width="100%" height="100%" viewBox: "0 0 12rem 32rem" preserveAspectRatio="none" fill="red">
+      <p>While I'm confident to tackle any problem, how long it takes me to hole out can be likened to where a drive ends up in golf.<br>(Not one of my drives, of course. They end up in the water.)</p> 
+      <svg width="100%" height="26rem" viewBox: "0 0 12rem 32rem" preserveAspectRatio="none" fill="red">
         <text x="0rem" y="1.5rem" fill="#eee">On the green</text>
         <rect class="svg-rect-1" x="0" y="2.5rem" width="90%" />
         <text class="svg-text-1" x="1rem" y="3.5rem">JavaScript</text>
@@ -64,14 +66,72 @@ As an end-user, I used software to collate, visualise and calculate my data. I a
     <div class="page" id="portfolio">
 
       <h2>Portfolio</h2>
+      <p>Here are some examples of my work.</p>
       <div class="grid">
-        <div class="item">
+       <img class="pf-img" alt="This portfolio website" src="pp1.jpg">
+        <div class="pf-item">
+         <span class="pf-title">Portfolio Website</span>
+         <a class="pf-link" href="https://github.com/JCrosby0/website" target="_blank">Repository</a>
+         <a class="pf-link" href="https://github.com/JCrosby0/website" target="_blank">Demo - You're looking at it!</a>
+         <ul class="pf-features">
+           <li>HTML</li>
+           <li>CSS</li>
+           <li>SVG</li>
+           <li>Grid</li>
+          </ul>
+          <p class="pf-description">
+A portfolio site for a JS developer, made without any JS! 
+This site was built entirely in a terminal window with Nano, no IDE. 
+Why? I started by wanting to build a static site without a framework, and got carried away!</p>
         </div>
-        <div class="item">
+        <img class="pf-img" alt="Sudoku Grid App" src="pp2.jpg"></a>
+        <div class="pf-item">
+          <span class="pf-title">Sudoku Grid</span>
+          <a class="pf-link" href="https://github.com/JCrosby0/sudoku-grid" target="_blank">Repository</a>
+          <a class="pf-link" href="https://jcrosby0.github.io/sudoku-grid" target="_blank">Demo</a>
+          <ul class="pf-features">
+            <li>VueJS</li>
+            <li>Jest</li>
+            <li>Vuex</li>
+            <li>Event Listeners</li>
+         </ul>
+          <p class="pf-description">
+A fully functional Sudoku grid for solving Sudoku. 
+Complete with highlighting options and puzzle import. 
+Listeners for key input and undo stack. Full E2E test suite in Jest. 
+Inspired by the 'Cracking the Cryptic' web-app.</p>
         </div>
-        <div class="item">
+        <img class="pf-img" alt="Sudoku Grid App" src="pp3.jpg"></a>
+        <div class="pf-item">
+          <span class="pf-title">Meal Planner</span>
+          <a class="pf-link" href="https://github.com/JCrosby0/meal-planner" target="_blank">Repository</a>
+          <a class="pf-link" href="https://jcrosby0.github.io/meal-planner" target="_blank">Demo</a>
+          <ul class="pf-features">
+            <li>TypeScript</li>
+            <li>VueJS 3.0</li>
+            <li>Drag and Drop</li>
+            <li>Responsive</li>
+          </ul>
+          <p class="pf-description">
+Select Meals from a list, drag or drop them into the weekly planner, and the ingredients will be compiled and presented in a common shopping list. 
+Sorted by home layout (for checking supplied) or by supermarket layout.
+Built primarily for mobile devices (as that's what you'll have at the supermarket!)</p>
         </div>
+<!--
+        <img class="pf-img" alt="Meal Planner App" src="pp4.jpg"></a>
+        <div class="pf-item">
+          <span class="pf-title">Portfolio Piece 4</span>
+          <a class="pf-link" href="https://github.com/JCrosby0/website" target="_blank">Repository</a>
+          <a class="pf-link" href="https://github.com/JCrosby0/website" target="_blank">Demo</a>
 
+          <ul class="pf-features">
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+          </ul>
+          <p class="pf-description">Description of Portfolio Piece 4</p>
+        </div>
+-->
       </div>
     </div>
     <div class="page" id="contact">
@@ -82,6 +142,7 @@ As an end-user, I used software to collate, visualise and calculate my data. I a
       <a href="https://www.github.com/jcrosby0" target="_blank" rel="noreferrer">Github</a><br>
       <a href="https://www.linkedin.com/in/joseph-crosby-5918a79/" target="_blank" rel="noreferrer">LinkedIn</a><br>
       <a href="mailto:joe@crsb.io">Email</a>
+      <img class="dog-tax" src="dogtax.jpg" alt="Dog Tax">
     </div>
   </body>
 </html>
