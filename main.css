@@ -36,6 +36,9 @@ a.target {
   right: -1rem;
   transform: rotate(90deg);
 }
+.image-container {
+  height: 70vh;
+}
 
 #page-land {
   display: flex;
@@ -64,9 +67,11 @@ a.target {
   min-height: 100vh;
   padding: 1.5rem 2.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
+  background: #333333;
 }
 .page:nth-child(even) {
-  background: #222;
+  background: #222222;
+
 }
 #page-skills {
   display: flex;
@@ -236,6 +241,8 @@ svg .svg-text-3 {
     height: 220px;
     transition: ease all 0.5s;
   }
+  .image-container {
+    height: 60vh;
 }
 
 
