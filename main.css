@@ -6,10 +6,13 @@ html, body {
 }
 
 body {
-  background-color: #333333;
   font-size:1.4rem;
   font-family: sans-serif;
   transition: ease all 0.5s;
+  background: #333333;
+  background-image: url('background.svg');
+  background-position: 50% 50%;
+  background-repeat: repeat;
 }  
 
 body, a, a:hover, a:visited {
@@ -67,11 +70,11 @@ a.target {
   min-height: 100vh;
   padding: 1.5rem 2.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
-  background: #333333;
+  background:rgba(0,0,0,0.3);
 }
-.page:nth-child(even) {
-  background: #222222;
 
+.page:nth-child(odd) {
+  background: rgba(64,64,64,0.3);
 }
 #page-skills {
   display: flex;
@@ -188,6 +191,20 @@ svg .svg-text-3 {
   right: 2rem;
   border-radius: 2rem;
 }
+
+/* obfuscation */
+span.obfu { 
+  unicode-bidi:bidi-override; 
+  direction:rtl; 
+  cursor: default;
+  line-height: 2rem; 
+}
+span.obfu.ema:before { content: "moc.li"; }
+span.obfu.ema:after { content: "@ybsorcbhpesoj"; }
+span.obfu.pho:before { content: "927 "; }
+span.obfu.pho:after { content: " 2140"; }
+
+
 @media screen and (max-width: 560px) {
   .text-haiku {
     font-size: 1.7rem;
@@ -215,9 +232,10 @@ svg .svg-text-3 {
 .dog-tax {
   position: absolute;
   bottom: 1rem;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 1rem;
+  max-width: 50vw;
 }
+
 
 @media screen and (max-width: 480px) {
   body {
