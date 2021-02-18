@@ -50,19 +50,19 @@ a.target {
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  transition: ease all 0.5s;
+  /*transition: ease all 0.5s;*/
 }
 
 .text-haiku {
   font-size: 2rem;
   font-family: sans-serif;
   flex: 0 0 auto;
-  transition: ease all 0.5s
+ /* transition: ease all 0.5s*/
 }
 .image-container {
   flex: 0 1 auto;
   margin: -1.8rem;
-  transition: ease all 0.5s
+  /*transition: ease all 0.5s*/
 }
 
 .page {
@@ -179,7 +179,7 @@ svg .svg-text-3 {
   fill: #333;
   x: 2rem;
   font-size: 1rem;
-  transition: all ease 0.5s;
+  /*transition: all ease 0.5s;*/
 }
 
 #contact {
@@ -240,24 +240,24 @@ span.obfu.pho:after { content: " 2140"; }
 @media screen and (max-width: 480px) {
   body {
     font-size: 1rem;
-    transition: ease all 0.5s;
+    /*transition: ease all 0.5s;*/
   }
 
   .contact {
     position: absolute;
     top: 2rem;
-    transition: ease all 0.5s;
+    /*transition: ease all 0.5s;*/
   }
 
   .text-haiku {
     font-size: 1.2rem;
-    transition: ease all 0.5s;
+    /*transition: ease all 0.5s;8/
 
   }  
   .image-container > picture > img {
     max-width: 50%;
     height: auto;
-    transition: ease all 0.5s;
+    /*transition: ease all 0.5s;*/
   }
   .image-container {
     height: 60vh;
@@ -267,20 +267,17 @@ span.obfu.pho:after { content: " 2140"; }
 @media screen and (max-width: 320px) {
   .text-haiku {
     font-size: 1rem;
-    transition: ease all 0.5s;
  }  
 }
 
 @media screen and (max-width: 280px) {
   .text-haiku {
     font-size: .5rem;
-    transition: ease all 0.5s;
   }  
 
   .text-haiku:after {
     content: 'Get in touch and let me know what device you're using... it's tiny!'
     font-size: 1rem;
-    transition: ease all 0.5s;
     color: white;
   }
 }
