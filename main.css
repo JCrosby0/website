@@ -8,7 +8,7 @@ html, body {
 body {
   font-size:1.4rem;
   font-family: sans-serif;
-  transition: ease all 0.5s;
+  /*transition: ease all 0.5s;*/
   background: #333333;
   background-image: url('background.svg');
   background-position: 50% 50%;
@@ -208,7 +208,7 @@ span.obfu.pho:after { content: " 2140"; }
 @media screen and (max-width: 560px) {
   .text-haiku {
     font-size: 1.7rem;
-    transition: ease all 0.5s;
+   /* transition: ease all 0.5s;*/
  }
   .grid {
     display: grid;
