@@ -61,7 +61,6 @@ a.target {
 }
 .image-container {
   flex: 0 1 auto;
-  margin: -1.8rem;
   /*transition: ease all 0.5s*/
 }
 
@@ -261,6 +260,10 @@ span.obfu.pho:after { content: " 2140"; }
   }
   .image-container {
     height: 60vh;
+  }
+  #page-land {
+    justify-content: space-between;
+  }
 }
 
 
