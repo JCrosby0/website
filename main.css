@@ -255,8 +255,8 @@ span.obfu.pho:after { content: " 2140"; }
 
   }  
   .image-container > picture > img {
-    width: 195px;
-    height: 220px;
+    max-width: 50%;
+    height: auto;
     transition: ease all 0.5s;
   }
   .image-container {
