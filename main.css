@@ -70,7 +70,7 @@ body {
   font-family: sans-serif;
   /*transition: ease all 0.5s;*/
   background: var(--background-primary);
-  background-image: url('background.svg');
+  background-image: url('img/background.svg');
   background-repeat: repeat;
   background-position: 50% 50%;
 }
