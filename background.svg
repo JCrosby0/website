@@ -5,7 +5,7 @@
   <defs>
  <!-- curve pattern-->
     <pattern id="Curve" x="-10" y="-40" width="180" height="120" patternUnits="userSpaceOnUse" style="overflow:visible">
-      <path d="M 10 80 Q 52.5 10, 95 80 T 180 80" stroke="#111111" fill="transparent"/>
+      <path d="M 10 80 Q 52.5 10, 95 80 T 180 80" stroke="#111" fill="transparent"/>
     </pattern>
 <!-- rectangle to transform -->
     <pattern id="Rectangle" x="0" y="0" width="170" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">

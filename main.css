@@ -1,3 +1,63 @@
+:root {
+  --background-primary: #333333;
+  --background-secondary: #222222;
+  --background-tertiary: #111111;
+  --background-transparent-primary: rgba(128,128,128,0.3);
+  --background-transparent-secondary: rgba(64,64,64,0.3);
+  --color-text: #fefefe;
+  --color-primary: #88FE88;
+  --color-primary-dark: #880088;
+  --color-primary-light: #FFBBFF;
+  --color-secondary: #FF88FF;
+  --color-rect-1: #88ff88;
+  --color-rect-2: #00ff00;
+  --color-rect-3: #008800;
+  --color-rect-text: #333333;
+
+}
+
+/* TOGGLE LIGHT MODE BASED ON USER PREFERENCE*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-primary: #CCCCCC;
+    --background-secondary: #EEEEEE;
+    --background-tertiary: #FEFEFE;
+    --background-transparent-primary: rgba(208,208,208,0.8);
+    --background-transparent-secondary: rgba(222,222,222,0.8);
+    --color-text: #010101;
+    --color-primary: #880188;
+    --color-primary-dark: #003300;
+    --color-primary-light: #88ff88;
+    --color-secondary: #008800;
+    --color-rect-1: #88ff88;
+    --color-rect-2: #00ff00;
+    --color-rect-3: #008800;
+    --color-rect-text: #333333;
+  } 
+}
+
+/* DARK PARAMETERS - OVERWRITING LIGHT FOR TESTING SINCE CHROME DOESN'T SUPPORT YET */
+/* set to 'light' to user these parameters */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-primary: #333333;
+    --background-secondary: #222222;
+    --background-tertiary: #111111;
+    --background-transparent-primary: rgba(128,128,128,0.3);
+    --background-transparent-secondary: rgba(64,64,64,0.3);
+    --color-text: #fefefe;
+    --color-primary: #88FE88;
+    --color-primary-dark: #880088;
+    --color-primary-light: #ffBBff;
+    --color-secondary: #FF88FF;
+    --color-rect-1: #88ff88;
+    --color-rect-2: #00ff00;
+    --color-rect-3: #008800;
+    --color-rect-text: #333333;
+  }
+}
+
+
 html, body {
   overflow-x: hidden;
   margin: 0;
@@ -9,16 +69,17 @@ body {
   font-size:1.4rem;
   font-family: sans-serif;
   /*transition: ease all 0.5s;*/
-  background: #333333;
+  background: var(--background-primary);
   background-image: url('background.svg');
-  background-position: 50% 50%;
   background-repeat: repeat;
-}  
+  background-position: 50% 50%;
+}
 
 body, a, a:hover, a:visited {
   text-decoration: none;
-  color: #fefefe;
+  color: var(--color-text);
 }
+
 a {
  line-height: 2rem;
 }
@@ -69,11 +130,11 @@ a.target {
   min-height: 100vh;
   padding: 1.5rem 2.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
-  background:rgba(0,0,0,0.3);
+  background: var(--background-transparent-primary);
 }
 
 .page:nth-child(odd) {
-  background: rgba(64,64,64,0.3);
+  background: var(--background-transparent-secondary);
 }
 #page-skills {
   display: flex;
@@ -89,11 +150,17 @@ a.target {
   flex: 1 1 auto;
 }
 span {
-  color: #88FE88;
+  color: var(--color-primary);
 }
 
+.text-color {
+  color: var(--color-text);
+  fill: var(--color-text);
+}
+
+
 .highlight {
-  color: #FF88FF;
+  color: var(--color-secondary);
   font-size: larger;
 }
 
@@ -116,13 +183,13 @@ span {
 }
 /* second item */
 .grid div:nth-child(4n) {
-  background-color: #222;
+  background-color: var(--background-secondary);
   grid-column: 1/3;
 }
 
 /* container with .pf-title, pf-features, pf-description */
 .pf-item {
-  background-color: #111;
+  background-color: var(--background-tertiary);
   padding: 1rem;
   box-sizing: border-box;
   grid-column: 2/4;
@@ -150,12 +217,13 @@ span {
   padding: 0;
 }
 .pf-features li {
-  display: inline;
-  border: 1px #883388 solid;
-  background: #ffccff;
-  color: #883388;
+  display: inline-block;
+  border: 1px var(--color-primary-dark) solid;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
   font-size: 0.85rem;
-  padding: 0.3rem 0.6rem;;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem 0.1rem;
   border-radius: 0.3rem;
 }
 .pf-description {
@@ -168,14 +236,14 @@ svg .svg-rect-3 {
   stroke: #888888;
   height: 1.5rem;
 }
-svg .svg-rect-1 { fill: #88ff88; }
-svg .svg-rect-2 { fill: #00ff00; }
-svg .svg-rect-3 { fill: #008800; }
+svg .svg-rect-1 { fill: var(--color-rect-1); }
+svg .svg-rect-2 { fill: var(--color-rect-2);; }
+svg .svg-rect-3 { fill: var(--color-rect-3);; }
 
 svg .svg-text-1, 
 svg .svg-text-2, 
 svg .svg-text-3 {
-  fill: #333;
+  fill: var(--color-rect-text);
   x: 2rem;
   font-size: 1rem;
   /*transition: all ease 0.5s;*/
@@ -207,7 +275,6 @@ span.obfu.pho:after { content: " 2140"; }
 @media screen and (max-width: 560px) {
   .text-haiku {
     font-size: 1.7rem;
-   /* transition: ease all 0.5s;*/
  }
   .grid {
     display: grid;
@@ -239,30 +306,28 @@ span.obfu.pho:after { content: " 2140"; }
 @media screen and (max-width: 480px) {
   body {
     font-size: 1rem;
-    /*transition: ease all 0.5s;*/
   }
 
   .contact {
     position: absolute;
     top: 2rem;
-    /*transition: ease all 0.5s;*/
   }
 
   .text-haiku {
     font-size: 1.2rem;
-    /*transition: ease all 0.5s;8/
-
   }  
   .image-container > picture > img {
     max-width: 50%;
     height: auto;
-    /*transition: ease all 0.5s;*/
   }
   .image-container {
     height: 60vh;
   }
   #page-land {
     justify-content: space-between;
+  }
+  .pf-title {
+    display:block;
   }
 }
 
@@ -284,6 +349,3 @@ span.obfu.pho:after { content: " 2140"; }
     color: white;
   }
 }
-
-
-
