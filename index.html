@@ -20,12 +20,11 @@
        <span class="italics">Let's solve some problems!</span>
       </div>
       <div class="image-container">
-	<!--<picture>-->
-	  <!--<source type="image/webp" srcset="joe.webp">
-	  <source type="image/png" srcset="joe.png">-->
-	  <!--<img src="joe-photo-cartoon2.png" height="100%" alt="Joe Crosby, #allTheFilters">-->
-          <img src="img/joe-photo-cartoon2.png" srcset="img/joe-photo-cartoon-small.png 480w, img/joe-photo-cartoon2.png 1080w" sizes="50vw" height="100%" alt="Joe Crosby + filters">
-	<!--</picture>-->
+        <picture>
+          <source srcset="img/joe-photo-cartoon-small.webp 480w, img/joe-photo-cartoon2.webp 1080w" sizes="50vw" type="image/webp">
+          <source srcset="img/joe-photo-cartoon-small.png 480w, img/joe-photo-cartoon2.png 1080w" sizes="50vw" type="image/png"> 
+          <img src="img/joe-photo-cartoon2.png" height="100%" alt="Joe Crosby + Filters">
+        </picture>
       </div>
      </div>
     <div class="page" id="page-about">
@@ -86,7 +85,12 @@ how long it takes me to hole out can be likened to where a drive ends up in golf
       <p>Here are some examples of my work.</p>
       <div class="grid">
 <!-- Portfolio Website -->
-       <img class="pf-img" alt="This portfolio website" src="img/web-thumb.png">
+
+        <picture>
+          <source srcset="img/web-thumb.webp" type="image/webp">
+          <source srcset="img/web-thumb.png" type="image/png">
+          <img class="pf-img" alt="This portfolio website" src="img/web-thumb.png">
+        </picture></a>
         <div class="pf-item">
          <span class="pf-title">Portfolio Website</span>
          <a class="pf-link" href="https://github.com/JCrosby0/website" rel="noreferrer" target="_blank">Repository</a>
@@ -103,7 +107,11 @@ This site was built entirely in a terminal window with Nano, no IDE.
 Why? I started by wanting to build a static site without a framework, and got carried away!</p>
         </div>
 <!-- Sudoku App -->
-        <img class="pf-img" alt="Sudoku Grid App" src="img/sudoku.png"></a>
+        <picture>
+          <source srcset="img/sudoku.webp" type="image/webp">
+          <source srcset="img/sudoku.png" type="image/png">
+          <img class="pf-img" alt="Sudoku Grid App" src="img/sudoku.png"></a>
+        </picture></a>
         <div class="pf-item">
           <span class="pf-title">Sudoku Web App</span>
           <a class="pf-link" href="https://github.com/JCrosby0/sudoku-web-app" rel="noreferrer" target="_blank">Repository</a>
@@ -121,7 +129,13 @@ Listeners for key input and undo stack. Full E2E test suite in Cypress.
 Inspired by the 'Cracking the Cryptic' web-app.</p>
         </div>
 <!-- Meal Planner -->
-        <img class="pf-img" alt="Meal Planner App" src="img/meal-planner.png"></a>
+        <picture>
+          <source srcset="img/meal-planner.webp" type="image/webp">
+          <source srcset="img/meal-planner.png" type="image/png">
+          <img class="pf-img" alt="Meal Planner App" src="img/meal-planner.png"></a>
+        </picture></a>
+
+
         <div class="pf-item">
           <span class="pf-title">Meal Planner</span>
           <a class="pf-link" href="https://github.com/JCrosby0/meal-planner" rel="noreferrer" target="_blank">Repository</a>
@@ -138,7 +152,11 @@ Sorted by home layout (for checking supplied) or by supermarket layout.
 Built primarily for mobile devices (as that's what you'll have at the supermarket!)</p>
         </div>
 <!-- GeoFit -->
-        <img class="pf-img" alt="GeoFit by Antaeus Technologies" src="img/geofit.jpg"></a>
+        <picture>
+          <source srcset="img/geofit.webp" type="image/webp">
+          <source srcset="img/geofit.jpg" type="image/jpg">
+          <img class="pf-img" alt="GeoFit by Antaeus Technologies" src="img/geofit.jpg">
+        </picture></a>
         <div class="pf-item">
           <span class="pf-title">GeoFit</span>
           <a class="pf-link" href="https://youtu.be/oNjjRYSzS0g?t=27" rel="noreferrer" target="_blank">Promotional Video</a>
@@ -168,7 +186,13 @@ I was reponsible for building the majority of the Front End, which was built in 
       <a href="https://www.linkedin.com/in/joseph-crosby-5918a79/" target="_blank" rel="noreferrer">LinkedIn</a><br>
       <a href="mailto:josephbcrosby+websiteenquiry&#x40;gmail&#x2e;com"><span class="obfu ema">amg</span></a><br>
       <a href="tel:+&#x36;&#x31;&#x34;&#x31;&#x32;&#x32;&#x37;&#x36;&#x37;&#x32;&#x39;"><span class="obfu pho">672<span></a>
-      <img class="dog-tax" src="img/dogtax.jpg" alt="Dog Tax: Zoe, my canine coding companion">
+        <picture>
+          <source srcset="img/dogtax.webp" type="image/webp">
+          <source srcset="img/dogtax.jpg" type="image/jpg">
+          <img class="dog-tax" src="img/dogtax.jpg" alt="Dog Tax: Zoe, my canine coding companion">
+        </picture>
+
+
     </div>
   </body>
 </html>

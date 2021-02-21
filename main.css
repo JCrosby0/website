@@ -178,7 +178,7 @@ span {
 }
 
 /* second image */
-.grid img:nth-child(4n-1) {
+.grid picture:nth-child(4n-1) {
   grid-column: 3/4;
 }
 /* second item */
@@ -209,7 +209,6 @@ span {
 .pf-link {
  font-size: 1rem;
 }
-
 
 .pf-features {
   list-style-type: none;
@@ -283,11 +282,12 @@ span.obfu.pho:after { content: " 2140"; }
     gap: 0rem / 0rem | 1rem;
   }
   .grid *,
-  .grid img:nth-child(n),
+  .grid picture:nth-child(n),
   .grid div:nth-child(n)  {
     grid-column: 1 / -1;
   }
-  .grid img {
+  .grid picture,
+  .grid .pf-img {
     margin-top: 1rem;
     border-radius: 0.5rem 0.5rem 0 0;
   }
