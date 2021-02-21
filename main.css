@@ -100,7 +100,8 @@ a.target {
   right: -1rem;
   transform: rotate(90deg);
 }
-.image-container {
+.image-container,
+.image-container picture {
   height: 70vh;
 }
 
@@ -316,11 +317,12 @@ span.obfu.pho:after { content: " 2140"; }
   .text-haiku {
     font-size: 1.2rem;
   }  
-  .image-container > picture > img {
+  .image-container > picture {
     max-width: 50%;
     height: auto;
   }
-  .image-container {
+  .image-container,
+  .image-container picture {
     height: 60vh;
   }
   #page-land {
