@@ -309,6 +309,7 @@ span.obfu.pho:after { content: " 2140"; }
   .contact {
     position: absolute;
     top: 2rem;
+    right: -1rem;
   }
   .top {
     position: absolute;
