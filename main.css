@@ -1,7 +1,6 @@
 :root {
   --background-primary: #333333;
   --background-secondary: #222222;
-  --background-tertiary: #111111;
   --background-transparent-primary: rgba(128,128,128,0.3);
   --background-transparent-secondary: rgba(64,64,64,0.3);
   --color-text: #fefefe;
@@ -16,7 +15,6 @@
   :root {
     --background-primary: #CCCCCC;
     --background-secondary: #EEEEEE;
-    --background-tertiary: #FEFEFE;
     --background-transparent-primary: rgba(208,208,208,0.8);
     --background-transparent-secondary: rgba(222,222,222,0.8);
     --color-text: #010101;
@@ -33,7 +31,6 @@
   :root {
     --background-primary: #333333;
     --background-secondary: #222222;
-    --background-tertiary: #111111;
     --background-transparent-primary: rgba(128,128,128,0.3);
     --background-transparent-secondary: rgba(64,64,64,0.3);
     --color-text: #fefefe;
@@ -88,9 +85,16 @@ a.target {
 .contact {
   position: absolute;
   top: 3rem;
-  right: -1rem;
+  right: -2rem;
   transform: rotate(90deg);
 }
+.top {
+  position: absolute;
+  bottom: calc(100vh - 4rem);
+  right: 0;
+  transform: rotate(90deg);
+}
+
 .image-container {
   height: 70vh;
   width: 90vh;
@@ -102,6 +106,7 @@ a.target {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
+  filter: saturate(75%);
 }
 
 #page-land {
@@ -189,7 +194,7 @@ span {
 
 /* container with .pf-title, pf-features, pf-description */
 .pf-item {
-  background-color: var(--background-tertiary);
+  background-color: var(--background-primary);
   padding: 1rem;
   box-sizing: border-box;
   grid-column: 2/4;
@@ -305,7 +310,11 @@ span.obfu.pho:after { content: " 2140"; }
     position: absolute;
     top: 2rem;
   }
-
+  .top {
+    position: absolute;
+    bottom: calc(100vh - 3rem);
+    right: 0;
+  }
   .text-haiku {
     font-size: 1.2rem;
   }  

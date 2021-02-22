@@ -2,43 +2,58 @@
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
 "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
 <svg 
   xmlns="http://www.w3.org/2000/svg" 
   xmlns:xlink="http://www.w3.org/1999/xlink"
   viewPort="0 0 100% 33rem"
 >
  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="svg.css" type="text/css"/>
-  <text class="text-color" x="0rem" y="1.5rem">On the green</text>
-  <rect class="svg-rect-1" x="0" y="2.5rem" width="90%" />
-  <text class="svg-text-1" x="1rem" y="3.5rem">JavaScript</text>
-  <rect class="svg-rect-1" x="0" y="4.5rem" width="85%" />
-  <text class="svg-text-1" x="1rem" y="5.5rem" fill="#333">VueJs</text>
-  <rect class="svg-rect-1" x="0" y="6.5rem" width="80%" />
-  <text class="svg-text-1" x="1rem" y="7.5rem" fill="#333">D3JS</text>
-  <rect class="svg-rect-1" x="0" y="8.5rem" width="80%" />
-  <text class="svg-text-1" x="1rem" y="9.5rem" fill="#333">SVG</text>
-  <rect class="svg-rect-1" x="0" y="10.5rem" width="75%" />
-  <text class="svg-text-1" x="1rem" y="11.5rem" fill="#333">TypeScript</text>
-  <rect class="svg-rect-1" x="0" y="12.5rem" width="60%" />
-  <text class="svg-text-1" x="1rem" y="13.5rem" fill="#333">AWS</text>
-  <rect class="svg-rect-1" x="0" y="14.5rem" width="70%" />
-  <text class="svg-text-1" x="1rem" y="15.5rem" fill="#333">Firebase</text>
-  <rect class="svg-rect-1" x="0" y="16.5rem" width="80%" />
-  <text class="svg-text-1" x="1rem" y="17.5rem" fill="#333">GitHub</text>
-  <rect class="svg-rect-1" x="0" y="18.5rem" width="60%" />
-  <text class="svg-text-1" x="1rem" y="19.5rem" fill="#333">NodeJS</text>
-
-  <text class="text-color" x="0rem" y="22rem">On the fairway</text>
-  <rect class="svg-rect-2" x="0" y="23rem" width="55%" />
-  <text class="svg-text-2" x="1rem" y="24rem" fill="#333">Python</text>
-  <rect class="svg-rect-2" x="0" y="25rem" width="70%" />
-  <text class="svg-text-2" x="1rem" y="26rem" fill="#333">Excel/VBA</text>
-
-  <text class="text-color" x="0rem" y="28.5rem">In the rough</text>
-  <rect class="svg-rect-3" x="0" y="29.5rem" width="50%" />
-  <text class="svg-text-3" x="1rem" y="30.5rem" fill="#333">NGINX</text>
-  <rect class="svg-rect-3" x="0" y="31.5rem" width="50%" />
-  <text class="svg-text-3" x="1rem" y="32.5rem" fill="#333">PostgreSQL</text>
+  <g class="section-1">
+    <text class="title">On the green</text>
+    <g>
+      <rect width="90%" />
+      <rect width="85%" />
+      <rect width="80%" />
+      <rect width="80%" />
+      <rect width="75%" />
+      <rect width="60%" />
+      <rect width="70%" />
+      <rect width="80%" />
+      <rect width="60%" />
+    </g>
+    <g class="label">
+      <text>JavaScript</text>
+      <text>VueJs</text>
+      <text>D3JS</text>
+      <text>SVG</text>
+      <text>TypeScript</text>
+      <text>AWS</text>
+      <text>Firebase</text>
+      <text>GitHub</text>
+      <text>NodeJS</text>
+    </g>
+  </g>
+  <g class="section-2">
+    <text class="title">On the fairway</text>
+    <g>
+      <rect width="55%" />
+      <rect width="70%" />
+    </g>
+    <g class="label">
+      <text>Python</text>
+      <text>Excel/VBA</text>
+    </g>
+  </g>
+  <g class="section-3">
+    <text class="title">In the rough</text>
+    <g>
+      <rect width="50%" />
+      <rect width="50%" />
+    </g>
+    <g class="label">
+      <text>NGINX</text>
+      <text>PostgreSQL</text>
+    </g>
+  </g>
 </svg>
 

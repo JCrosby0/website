@@ -1,21 +1,50 @@
-:root {
-  font-family: Arial, sans-serif;
-}
+:root { font-family: Arial, sans-serif }
 
-rect {
-  stroke: #888888;
-  height: 1.5rem;
-}
+/* styling for bars */
+rect { stroke: #888888; height: 1.5rem }
 
-.text-color { fill: #fefefe }
+/* styling for bars by section */
+.section-1 rect { fill: #88ff88 }
+.section-2 rect { fill: #00ff00 }
+.section-3 rect { fill: #008800 }
 
-.svg-rect-1 { fill: #88ff88; }
-.svg-rect-2 { fill: #00ff00; }
-.svg-rect-3 { fill: #008800; }
 
-.svg-text {
+/* this block of transforms prevents needing to situate each bar or text individually.
+While its repetitive, it is a limitation of pure CSS in the absence of a pre-compiler or JS */
+text:nth-of-type(1), 
+rect:nth-of-type(1) { transform: translate(0, 1rem) }
+text:nth-of-type(2), 
+rect:nth-of-type(2) { transform: translate(0, 3rem) }
+text:nth-of-type(3), 
+rect:nth-of-type(3) { transform: translate(0, 5rem) }
+text:nth-of-type(4), 
+rect:nth-of-type(4) { transform: translate(0, 7rem) }
+text:nth-of-type(5), 
+rect:nth-of-type(5) { transform: translate(0, 9rem) }
+text:nth-of-type(6), 
+rect:nth-of-type(6) { transform: translate(0, 11rem) }
+text:nth-of-type(7), 
+rect:nth-of-type(7) { transform: translate(0, 13rem) }
+text:nth-of-type(8), 
+rect:nth-of-type(8) { transform: translate(0, 15rem) }
+text:nth-of-type(9), 
+rect:nth-of-type(9) { transform: translate(0, 17rem) }
+
+/* section title text, below the nth spam to override it */
+text.title { 
+  fill: #fefefe;
+  font-size: 1.3rem; 
+  transform: translate(0, 0rem); }
+
+/* styling for text labels */
+.label {
   fill: #333333;
   x: 2rem;
   font-size: 1rem;
+  transform: translate(1rem, 1rem);
 }
+/* translate the three sections so that nth-spam can be used */
+.section-1 { transform: translate(0, 1.5rem) }
+.section-2 { transform: translate(0, 22rem) }
+.section-3 { transform: translate(0, 28.5rem) }
 
