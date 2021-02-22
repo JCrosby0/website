@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" >
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Web Developer Portfolio for Joe Crosby.">
@@ -44,41 +44,8 @@ As an end-user, I used software to collate, visualise and calculate my data. I a
       <p>While I'm confident to tackle any front-end problem (and working on rounding that out to full-stack), 
 how long it takes me to hole out can be likened to where a drive ends up in golf.
 (Not one of my drives, of course. They end up in the water.)</p> 
-      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="33rem" viewBox: "0 0 12rem 33rem" preserveAspectRatio="none" fill="red">
-       <text>
-        <text class="text-color" x="0rem" y="1.5rem"">On the green</text>
-        <rect class="svg-rect-1" x="0" y="2.5rem" width="90%" />
-        <text class="svg-text-1" x="1rem" y="3.5rem">JavaScript</text>
-        <rect class="svg-rect-1" x="0" y="4.5rem" width="85%" />
-        <text class="svg-text-1" x="1rem" y="5.5rem" fill="#333">VueJs</text>
-        <rect class="svg-rect-1" x="0" y="6.5rem" width="80%" />
-        <text class="svg-text-1" x="1rem" y="7.5rem" fill="#333">D3JS</text>
-        <rect class="svg-rect-1" x="0" y="8.5rem" width="80%" />
-        <text class="svg-text-1" x="1rem" y="9.5rem" fill="#333">SVG</text>
-        <rect class="svg-rect-1" x="0" y="10.5rem" width="75%" />
-        <text class="svg-text-1" x="1rem" y="11.5rem" fill="#333">TypeScript</text>
-        <rect class="svg-rect-1" x="0" y="12.5rem" width="60%" />
-        <text class="svg-text-1" x="1rem" y="13.5rem" fill="#333">AWS</text>
-        <rect class="svg-rect-1" x="0" y="14.5rem" width="70%" />
-        <text class="svg-text-1" x="1rem" y="15.5rem" fill="#333">Firebase</text>
-        <rect class="svg-rect-1" x="0" y="16.5rem" width="80%" />
-        <text class="svg-text-1" x="1rem" y="17.5rem" fill="#333">GitHub</text>
-        <rect class="svg-rect-1" x="0" y="18.5rem" width="60%" />
-        <text class="svg-text-1" x="1rem" y="19.5rem" fill="#333">NodeJS</text>
-
-        <text class="text-color" x="0rem" y="22rem">On the fairway</text>
-        <rect class="svg-rect-2" x="0" y="23rem" width="55%" />
-        <text class="svg-text-2" x="1rem" y="24rem" fill="#333">Python</text>
-        <rect class="svg-rect-2" x="0" y="25rem" width="70%" />
-        <text class="svg-text-2" x="1rem" y="26rem" fill="#333">Excel/VBA</text>
-
-        <text class="text-color" x="0rem" y="28.5rem">In the rough</text>
-        <rect class="svg-rect-3" x="0" y="29.5rem" width="50%" />
-        <text class="svg-text-3" x="1rem" y="30.5rem" fill="#333">NGINX</text>
-        <rect class="svg-rect-3" x="0" y="31.5rem" width="50%" />
-        <text class="svg-text-3" x="1rem" y="32.5rem" fill="#333">PostgreSQL</text>
-       </text>
-      </svg>
+      <object id="svg-skills" data="skills.svg" type="image/svg+xml">
+      </object>
     </div>
     <div class="page" id="portfolio">
       <h2>Portfolio</h2>
@@ -89,7 +56,7 @@ how long it takes me to hole out can be likened to where a drive ends up in golf
         <picture>
           <source srcset="img/web-thumb.webp" type="image/webp">
           <source srcset="img/web-thumb.png" type="image/png">
-          <img class="pf-img" alt="This portfolio website" src="img/web-thumb.png">
+          <img class="pf-img" loading="lazy" alt="This portfolio website" src="img/web-thumb.png">
         </picture></a>
         <div class="pf-item">
          <span class="pf-title">Portfolio Website</span>
@@ -110,7 +77,7 @@ Why? I started by wanting to build a static site without a framework, and got ca
         <picture>
           <source srcset="img/sudoku.webp" type="image/webp">
           <source srcset="img/sudoku.png" type="image/png">
-          <img class="pf-img" alt="Sudoku Grid App" src="img/sudoku.png"></a>
+          <img class="pf-img" loading="lazy" alt="Sudoku Grid App" src="img/sudoku.png"></a>
         </picture></a>
         <div class="pf-item">
           <span class="pf-title">Sudoku Web App</span>
@@ -132,7 +99,7 @@ Inspired by the 'Cracking the Cryptic' web-app.</p>
         <picture>
           <source srcset="img/meal-planner.webp" type="image/webp">
           <source srcset="img/meal-planner.png" type="image/png">
-          <img class="pf-img" alt="Meal Planner App" src="img/meal-planner.png"></a>
+          <img class="pf-img" loading="lazy" alt="Meal Planner App" src="img/meal-planner.png"></a>
         </picture></a>
 
 
@@ -155,7 +122,7 @@ Built primarily for mobile devices (as that's what you'll have at the supermarke
         <picture>
           <source srcset="img/geofit.webp" type="image/webp">
           <source srcset="img/geofit.jpg" type="image/jpg">
-          <img class="pf-img" alt="GeoFit by Antaeus Technologies" src="img/geofit.jpg">
+          <img class="pf-img" loading="lazy" alt="GeoFit by Antaeus Technologies" src="img/geofit.jpg">
         </picture></a>
         <div class="pf-item">
           <span class="pf-title">GeoFit</span>
@@ -189,10 +156,8 @@ I was reponsible for building the majority of the Front End, which was built in 
         <picture>
           <source srcset="img/dogtax.webp" type="image/webp">
           <source srcset="img/dogtax.jpg" type="image/jpg">
-          <img class="dog-tax" src="img/dogtax.jpg" alt="Dog Tax: Zoe, my canine coding companion">
+          <img class="dog-tax" load="lazy" src="img/dogtax.jpg" alt="Dog Tax: Zoe, my canine coding companion">
         </picture>
-
-
     </div>
   </body>
 </html>

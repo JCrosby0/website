@@ -1,0 +1,21 @@
+:root {
+  font-family: Arial, sans-serif;
+}
+
+rect {
+  stroke: #888888;
+  height: 1.5rem;
+}
+
+.text-color { fill: #fefefe }
+
+.svg-rect-1 { fill: #88ff88; }
+.svg-rect-2 { fill: #00ff00; }
+.svg-rect-3 { fill: #008800; }
+
+.svg-text {
+  fill: #333333;
+  x: 2rem;
+  font-size: 1rem;
+}
+
