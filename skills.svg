@@ -7,7 +7,6 @@
   xmlns="http://www.w3.org/2000/svg" 
   xmlns:xlink="http://www.w3.org/1999/xlink"
   viewPort="0 0 100% 33rem"
-  alt="Bar chart showing Joe's skillset"
 >
  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="svg.css" type="text/css"/>
   <text class="text-color" x="0rem" y="1.5rem">On the green</text>
