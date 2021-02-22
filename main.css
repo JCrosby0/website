@@ -68,15 +68,19 @@ body, a, a:hover, a:visited {
 }
 
 a {
- line-height: 2rem;
+  line-height: 2rem;
+  display: inline-block
 }
 
 a:before {
-  content: "[ ";
+  content: "[\1F517";
+  display: inline-block;
 }
 a:after {
   content: " ]";
+  display: inline-block;
 }
+a:hover { color: var(--color-secondary) }
 a.target {
   display: none;
 }
