@@ -5,54 +5,56 @@
 <svg 
   xmlns="http://www.w3.org/2000/svg" 
   xmlns:xlink="http://www.w3.org/1999/xlink"
-  viewPort="0 0 100% 33rem"
+  viewPort="0 0 100% 35rem"
 >
  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="svg.css" type="text/css"/>
   <g class="section-1">
     <text class="title">On the green</text>
     <g>
       <rect width="90%" />
-      <rect width="85%" />
       <rect width="80%" />
-      <rect width="80%" />
-      <rect width="75%" />
-      <rect width="60%" />
       <rect width="70%" />
-      <rect width="80%" />
+      <rect width="90%" />
       <rect width="60%" />
+      <rect width="80%" />
+      <rect width="70%" />
+      <rect width="70%" />
+      <rect width="60%" />
+      <rect width="80%" />
     </g>
     <g class="label">
-      <text>JavaScript</text>
-      <text>VueJs</text>
-      <text>D3JS</text>
-      <text>SVG</text>
-      <text>TypeScript</text>
-      <text>AWS</text>
-      <text>Firebase</text>
-      <text>GitHub</text>
-      <text>NodeJS</text>
+      <text>JavaScript (Language)</text>
+      <text>TypeScript (Language)</text>
+      <text>NodeJS (Language)</text>
+      <text>VueJs (Framework)</text>
+      <text>Strapi (CMS)</text>
+      <text>D3JS (Package)</text>
+      <text>SVG (Standard)</text>
+      <text>Firebase (Cloud)</text>
+      <text>AWS (Cloud)</text>
+      <text>GitHub (Platform)</text>
     </g>
   </g>
   <g class="section-2">
     <text class="title">On the fairway</text>
     <g>
-      <rect width="55%" />
-      <rect width="70%" />
+      <rect width="65%" />
+      <rect width="75%" />
     </g>
     <g class="label">
-      <text>Python</text>
-      <text>Excel/VBA</text>
+      <text>Python (Language)</text>
+      <text>Excel/VBA (Language)</text>
     </g>
   </g>
   <g class="section-3">
     <text class="title">In the rough</text>
     <g>
-      <rect width="50%" />
-      <rect width="50%" />
+      <rect width="70%" />
+      <rect width="60%" />
     </g>
     <g class="label">
-      <text>NGINX</text>
-      <text>PostgreSQL</text>
+      <text>NGINX (Server)</text>
+      <text>PostgreSQL (DB)</text>
     </g>
   </g>
 </svg>

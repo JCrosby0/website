@@ -29,6 +29,9 @@ text:nth-of-type(8),
 rect:nth-of-type(8) { transform: translate(0, 15rem) }
 text:nth-of-type(9), 
 rect:nth-of-type(9) { transform: translate(0, 17rem) }
+text:nth-of-type(10), 
+rect:nth-of-type(10) { transform: translate(0, 19rem) }
+
 
 /* section title text, below the nth spam to override it */
 text.title { 
@@ -45,6 +48,6 @@ text.title {
 }
 /* translate the three sections so that nth-spam can be used */
 .section-1 { transform: translate(0, 1.5rem) }
-.section-2 { transform: translate(0, 22rem) }
-.section-3 { transform: translate(0, 28.5rem) }
+.section-2 { transform: translate(0, 24rem) }
+.section-3 { transform: translate(0, 30.5rem) }
 

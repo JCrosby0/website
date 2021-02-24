@@ -57,6 +57,7 @@ body {
   background-image: url('img/background.svg');
   background-repeat: repeat;
   background-position: 50% 50%;
+
 }
 
 body, a, a:hover, a:visited {
@@ -152,7 +153,7 @@ a.target {
   flex: 0 0 auto
 }
 #page-skills object {
-  flex: 1 1 33rem;
+  flex: 1 1 35rem;
 }
 span {
   color: var(--color-primary);
