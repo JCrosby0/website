@@ -65,6 +65,29 @@ body, a, a:hover, a:visited {
   color: var(--color-text);
 }
 
+h1 {
+  background: var(--color-primary-dark);
+  border: 2px var(--color-primary-dark) solid;
+  border-left: 0;
+  border-right: 0;
+  margin-right: auto;
+  padding-right: 3rem;
+  margin-left: -2rem;
+  padding-left: 2rem;
+  box-shadow: 0.5rem 0.5rem 0 0 var(--color-secondary);
+
+}
+h1:after {
+  content: "";
+  display: block-inline;
+  width: 0;
+  height: 0;
+  background: var(--color-primary);
+  border: 2rem var(--color-secondary-dark) solid;
+  border-right: 0;
+  border-bottom: 0;
+}
+
 a {
   line-height: 2rem;
   display: inline-block
@@ -137,18 +160,16 @@ a.target {
   padding: 1.5rem 2.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
   background: var(--background-transparent-primary);
-}
-
-.page:nth-child(odd) {
-  background: var(--background-transparent-secondary);
-}
-#page-skills {
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
 
-#page-skills h2,
+.page:nth-child(odd) {
+  background: var(--background-transparent-secondary);
+}
+
+#page-skills h1,
 #pake-skills p {
   flex: 0 0 auto
 }
