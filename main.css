@@ -26,7 +26,7 @@
 }
 
 /* DARK PARAMETERS - OVERWRITING LIGHT FOR TESTING SINCE CHROME DOESN'T SUPPORT YET */
-/* set to 'light' to user these parameters */
+/* set to 'light' to use these parameters */
 @media (prefers-color-scheme: light) {
   :root {
     --background-primary: #333333;
@@ -34,10 +34,10 @@
     --background-transparent-primary: rgba(128,128,128,0.3);
     --background-transparent-secondary: rgba(64,64,64,0.3);
     --color-text: #fefefe;
-    --color-primary: #88FE88;
+    --color-primary: #FF88FF;
     --color-primary-dark: #880088;
     --color-primary-light: #ffBBff;
-    --color-secondary: #FF88FF;
+    --color-secondary: #88FF88;
   }
 }
 
@@ -65,27 +65,21 @@ body, a, a:hover, a:visited {
   color: var(--color-text);
 }
 
-h1 {
+.h1-container {
   background: var(--color-primary-dark);
   border: 2px var(--color-primary-dark) solid;
   border-left: 0;
   border-right: 0;
   margin-right: auto;
   padding-right: 3rem;
-  margin-left: -2rem;
-  padding-left: 2rem;
-  box-shadow: 0.5rem 0.5rem 0 0 var(--color-secondary);
-
+  margin-left: -3rem;
+  padding-left: 3rem;
+  box-shadow: 0.5rem 0.5rem 0 0 var(--color-primary);
+  transform: skew(-20deg);
 }
-h1:after {
-  content: "";
-  display: block-inline;
-  width: 0;
-  height: 0;
-  background: var(--color-primary);
-  border: 2rem var(--color-secondary-dark) solid;
-  border-right: 0;
-  border-bottom: 0;
+h1 { 
+  transform: skew(20deg);
+  margin: 0.5rem;
 }
 
 a {
@@ -176,9 +170,9 @@ a.target {
 #page-skills object {
   flex: 1 1 35rem;
 }
-span {
+/*span {
   color: var(--color-primary);
-}
+}*/
 
 .text-color {
   color: var(--color-text);
@@ -232,6 +226,7 @@ span {
 .pf-title {
   display: inline;
   font-size: 1.5rem;
+  color: var(--color-secondary);
 }
 .pf-link {
  font-size: 1rem;
