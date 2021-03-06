@@ -1,0 +1,15 @@
+query Club($id: ID!) {
+  club(id: $id) {
+    id
+    name
+    contact
+    phone
+    email
+    website
+    suburb
+    postcode
+    location
+    ages
+    description
+  }
+}

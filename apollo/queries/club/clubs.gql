@@ -1,0 +1,13 @@
+query Clubs {
+  clubs {
+    id
+    name
+    description
+    suburb
+    postcode
+    img {
+      url
+    }
+    website
+  }
+}
