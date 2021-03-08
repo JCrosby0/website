@@ -1,0 +1,4 @@
+#Redirects from what the browser requests to what netlify serves
+/sudoku		https://jc-sudoku-grid.netlify.app
+/meal-planner   https://meal-planner.netlify.app
+/profile	https://crosby.netlify.app
