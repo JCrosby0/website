@@ -3,3 +3,4 @@
   X-XSS-Protection: 1; mode=block
   cache-control: max-age: 604801
   cache-control: must-revalidate
+  Content-Security-Policy: default-src 'self'; img-src https://*; object-src 'self'; child-src 'self';
