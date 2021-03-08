@@ -3,4 +3,5 @@
   X-XSS-Protection: 1; mode=block
   cache-control: max-age: 604801
   cache-control: must-revalidate
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Content-Security-Policy: default-src 'self'; img-src https://*; object-src 'self'; child-src 'self';
